@@ -1,0 +1,39 @@
+.product {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .product-container {
+    display: flex;
+
+    .left {
+      img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+        border: 5px solid;
+        border-color: $color-primary;
+        border-radius: 10px;
+        padding: 1rem;
+      }
+    }
+
+    .right {
+      padding-left: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      div {
+        display: flex;
+        gap: 1rem;
+
+        p {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

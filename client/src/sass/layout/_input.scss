@@ -1,0 +1,16 @@
+.layout-input {
+  font-family: $font-primary;
+  border: none;
+  border-bottom: 3px solid;
+  border-color: $color-dark;
+  color: $color-dark;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.layout-input:focus {
+  outline: none;
+}

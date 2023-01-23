@@ -1,0 +1,16 @@
+.layout-btn {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  background-color: $color-primary;
+  font-family: $font-primary;
+  color: $color-secondary;
+  border: 1px solid;
+  border-color: $color-primary;
+  cursor: pointer;
+}
+
+.layout-btn:hover {
+  background-color: $color-secondary;
+  color: $color-primary;
+}

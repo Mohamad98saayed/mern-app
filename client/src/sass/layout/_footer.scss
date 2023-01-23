@@ -1,0 +1,52 @@
+.footer {
+  height: 500px;
+  background-color: $color-primary;
+  color: $color-secondary;
+  font-size: 2rem;
+  margin-top: 5rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+    gap: 2rem;
+  }
+
+  .vertical-row {
+    height: 300px;
+    width: 2px;
+    background-color: $color-secondary;
+    opacity: 50%;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+    margin-left: 10rem;
+  }
+
+  .layout-input {
+    color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  .layout-btn {
+    color: $color-primary;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  .layout-btn:hover {
+    color: $color-secondary;
+    background-color: $color-primary;
+  }
+}

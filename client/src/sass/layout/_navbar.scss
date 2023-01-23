@@ -1,0 +1,95 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-primary;
+  color: $color-secondary;
+
+  img {
+    cursor: pointer;
+    padding: 1rem 0 1rem 3rem;
+    width: 100px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: $color-secondary;
+    }
+
+    a:hover {
+      color: $color-support;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+    .shoping-cart {
+      position: relative;
+      font-size: 1.2rem;
+
+      p {
+        font-size: 1rem;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        color: $color-secondary;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  .drop-down {
+    position: relative;
+    display: inline-block;
+
+    &-btn {
+      padding-right: 3rem;
+      font-size: 2rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-content {
+      display: none;
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $color-secondary;
+      }
+
+      a:hover {
+        color: $color-support;
+      }
+    }
+  }
+
+  .drop-down:hover .drop-down-content {
+    right: 1rem;
+    position: absolute;
+    background-color: $color-primary;
+    padding: 1rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+  }
+}

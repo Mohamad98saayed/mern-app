@@ -1,0 +1,135 @@
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 92.14px);
+  font-size: 1.2rem;
+
+  .deactivation {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.5);
+  }
+
+  .show-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .show-overlay {
+    // display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-dark, 0.9);
+  }
+
+  .hide-modal {
+    display: none;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    margin: 2rem auto;
+    border-color: rgba($color-primary, 0.5);
+  }
+
+  .profile-container {
+    padding: 3rem;
+    border: 5px solid;
+    border-color: rgba($color-primary, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .user-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid;
+        border-color: $color-primary;
+        object-fit: cover;
+      }
+
+      input {
+        font-size: 0;
+      }
+
+      input::-webkit-file-upload-button {
+        background-color: transparent;
+        border: none;
+        font-family: $font-primary;
+        font-size: 1rem;
+        color: $color-primary;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .user-details {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+
+      span {
+        color: $color-primary;
+        font-family: $font-support;
+      }
+
+      .update-details-button {
+        color: $color-primary;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    .change-password-btn {
+      text-decoration: underline;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-primary;
+      cursor: pointer;
+    }
+
+    .modal {
+      background-color: white;
+      position: absolute;
+      align-items: center;
+      gap: 2rem;
+      border: 1px solid;
+      border-color: $color-primary;
+      padding: 1rem 1rem 3rem 1rem;
+
+      p {
+        padding: 1rem;
+        margin-left: auto;
+        cursor: pointer;
+      }
+
+      p:hover {
+        background-color: $color-primary;
+        color: $color-secondary;
+      }
+    }
+  }
+}

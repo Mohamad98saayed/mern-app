@@ -1,0 +1,24 @@
+.product-card {
+  border: 10px solid;
+  border-radius: 25px;
+  border-color: $color-primary;
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+
+  img {
+    object-position: center;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    opacity: 50%;
+  }
+}
